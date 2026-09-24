@@ -1,0 +1,3 @@
+const btn=document.querySelector('.menu-btn');const links=document.querySelector('.nav-links');if(btn&&links){btn.addEventListener('click',()=>{const open=links.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));});}
+const year=document.querySelector('[data-year]');if(year)year.textContent=new Date().getFullYear();
+const form=document.querySelector('[data-preview-form]');if(form){form.addEventListener('submit',e=>{e.preventDefault();const n=form.querySelector('.form-note');if(n)n.textContent='Preview form only. Please call Bulldog Septic at (541) 306-9974 for service.';});}
